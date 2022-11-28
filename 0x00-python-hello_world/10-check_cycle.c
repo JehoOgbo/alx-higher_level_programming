@@ -10,14 +10,17 @@ int check_cycle(listint_t *list)
 {
 	listint_t *lead;
 
+	if (!list)
+		return (0);
+
 	/* go through list & compare each pointer with all after it */
 	/* if they are the same, return 1 */
-	while (list)
+	while (list->next)
 	{
 		lead = list->next;
-		while (lead)
+		while (lead->next)
 		{
-			if (lead == list)
+			if (lead->next == list->next)
 				return (1);
 			lead = lead->next;
 		}
