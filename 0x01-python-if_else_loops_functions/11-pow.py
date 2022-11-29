@@ -4,5 +4,5 @@
 # prototype: def pow(a, b); returns the value of a ^ b
 # you're not allowed to import any module
 
-def pow(a, b):  #function declaration
+def pow(a, b):  # function declaration
     return (a ** b)
