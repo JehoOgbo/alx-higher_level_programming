@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 
 # function to compute the value of a number raised to a power
 # prototype: def pow(a, b); returns the value of a ^ b
