@@ -19,7 +19,10 @@ listint_t *insert_node(listint_t **head, int number)
 	node->n = number;
 
 	if (head == NULL)
+	{
+		printf("%d\n", 972);
 		return (NULL);
+	}
 	ptr = *head;
 	if (ptr == NULL)
 	{
