@@ -10,8 +10,8 @@ def print_matrix_integer(matrix=[[]]):
     Do not cast integers into strings
     Use str.format() to print integers
     '''
-    if not matrix:
-        return None
+    if matrix == [[]]:
+        print("")
     for i in matrix:
         k = 0
         while k < len(i) - 1:

@@ -10,9 +10,9 @@ def new_in_list(my_list, idx, element):
     Do not use try/except
     '''
     if idx < 0:
-        return None
-    if idx > len(my_list):
-        return None
+        return my_list
+    if idx > len(my_list) - 1:
+        return my_list
     new = my_list[:]
     new[idx] = element
     return new
