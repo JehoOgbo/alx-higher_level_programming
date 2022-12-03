@@ -15,7 +15,7 @@ def print_matrix_integer(matrix=[[]]):
     for i in matrix:
         k = 0
         while k < len(i) - 1:
-            print("{}".format(i[k]), end=' ')
+            print("{:d}".format(i[k]), end=' ')
             k += 1
         if i:
-            print("{}".format(i[k]))
+            print("{:d}".format(i[k]))
