@@ -39,13 +39,18 @@ int is_palindrome(listint_t **head)
 {
 	listint_t *p, *q, *second;
 
-	if (*head == NULL)
+	if (!(*head) || (*head)->next == NULL)
 		return (1);
+	if ((*head)->next->next == NULL)
+	{
+		if ((*head)->n != (*head)->next->n)
+			return (0);
+		else
+			return (1);
+	}
 	p = *head;
 	q = *head;
-
-	/* split the linked list in the middle */
-	while (q)
+	while (q)  /* split the linked list in the middle */
 	{
 		p = p->next->next;
 		if (p->next == NULL)  /* if odd forget the middle */
@@ -60,7 +65,6 @@ int is_palindrome(listint_t **head)
 		}
 		q = q->next;
 	}
-	q->next = NULL;
 	second = reverse(&second);  /* reverse second linked list */
 	q = *head;  /* set q back to the beginning */
 	while (second->next)  /* while there is n value attached */
