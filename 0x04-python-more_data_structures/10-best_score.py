@@ -10,6 +10,8 @@ def best_score(a_dictionary):
     '''
     if a_dictionary is None:
         return (None)
+    if len(a_dictionary) == 0:
+        return (None)
     old = 0
     for k, v in a_dictionary.items():
         if v > old:
