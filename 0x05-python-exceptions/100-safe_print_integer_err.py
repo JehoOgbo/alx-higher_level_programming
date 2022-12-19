@@ -11,7 +11,7 @@ def safe_print_integer_err(value):
     """
     try:
         print("{:d}".format(value))
-    except ValueError as ex:
+    except (ValueError, TypeError) as ex:
         stderr.write("Exception: {}\n".format(ex.args[0]))
         return False
     else:
