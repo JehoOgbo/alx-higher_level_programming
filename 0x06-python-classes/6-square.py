@@ -2,6 +2,7 @@
 
 """Define a class Square."""
 
+
 class Square:
     """Defines a class for info about a square"""
 
@@ -59,6 +60,8 @@ class Square:
         else:
             row = self.__size
 
+            if self.__position[1] > 0:
+                print("")
             while row > 0:
                 print(" " * self.__position[0], end='')
                 column = self.__size
