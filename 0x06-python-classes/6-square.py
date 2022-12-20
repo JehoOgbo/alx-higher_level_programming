@@ -7,7 +7,12 @@ class Square:
     """Defines a class for info about a square"""
 
     def __init__(self, size=0, position=(0, 0)):
-        """__init__ initializes the data in the class"""
+        """__init__ initializes the data in the class
+
+        Args:
+                size (int): length of a side of square
+                position (int, int): position of origin of square
+        """
 
         if type(size) is not int:
             raise TypeError("size must be an integer")
@@ -15,12 +20,16 @@ class Square:
             raise ValueError("size must be >= 0")
 
         self.__size = size
+
         if type(position) is not tuple:
             raise TypeError("position must be a tuple of 2 positive integers")
         if len(position) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
+        if value[0] is not int or value[1] is not int:
+            raise TypeError("position must be a tuple of 2 positive integers")
         if position[0] < 0 or position[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
+
         self.__position = position
 
     def area(self):
