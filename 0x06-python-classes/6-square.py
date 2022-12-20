@@ -61,7 +61,7 @@ class Square:
             row = self.__size
 
             if self.__position[1] > 0:
-                print("")
+                print("\n" * self.__position[1], end='')
             while row > 0:
                 print(" " * self.__position[0], end='')
                 column = self.__size
