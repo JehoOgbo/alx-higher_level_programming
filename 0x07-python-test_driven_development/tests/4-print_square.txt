@@ -1,0 +1,35 @@
+4-print_square.txt
+
+Doctest for function ``print_square(size)``
+
+``print_square(size)`` prints a square using '#' characters.
+The argument size is the length of a side of the square.
+============
+::
+	>>> print_square = __import__('4-print_square').print_square
+	>>> print_square(4)
+	####
+	####
+	####
+	####
+	>>> print_square(0)
+
+size must be an integer. If not raise a TypeError.
+::
+	>>> print_square(78.45)
+	Traceback (most recent call last):
+	...
+	TypeError: size must be an integer
+	>>> print_square("myown")
+	Traceback (most recent call last):
+	...
+	TypeError: size must be an integer
+
+If size is less than 0, raise a ValueError.
+::
+	>>> print_square(-4)
+	Traceback (most recent call last):
+	...
+	ValueError: size must be >= 0
+
+Check for argument type must take precedence over that of value

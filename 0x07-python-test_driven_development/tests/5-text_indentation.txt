@@ -1,0 +1,33 @@
+5-text_indentation.txt
+
+Doctest for ``text_indentation(text)``
+
+``text_indentation(text)`` takes a string as argument.
+It then prints two newlines after every ., ? and : character
+
+============
+If the argument is not a string, raise a type Error Exception
+::
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+	>>> text_indentation(5678)
+	Traceback (most recent call last):
+	...
+	TypeError: text must be a string
+	>>> text_indentation(['time', 'today'])
+	Traceback (most recent call last):
+	...
+	TypeError: text must be a string
+
+In printed output, there should be no space at the beginning or end of a line
+::
+	>>> tim = "This is it: The day of Reckoning. Hurray? Who is that? me"
+	>>> text_indentation(tim)
+	This is it:
+	<BLANKLINE>
+	The day of Reckoning.
+	<BLANKLINE>
+	Hurray?
+	<BLANKLINE>
+	Who is that?
+	<BLANKLINE>
+	me
