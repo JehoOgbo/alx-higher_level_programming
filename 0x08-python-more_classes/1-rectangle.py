@@ -23,6 +23,7 @@ class Rectangle:
     def width(self):
         """Getter method for width"""
         return self.__width
+
     @width.setter
     def width(self, value):
         """setter function for width"""
@@ -36,6 +37,7 @@ class Rectangle:
     def height(self):
         """Getter method for rectangle's height"""
         return self.__height
+
     @height.setter
     def height(self, value):
         """setter method for height"""
