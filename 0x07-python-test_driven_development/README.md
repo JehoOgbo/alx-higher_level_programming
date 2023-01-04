@@ -1,1 +1,2 @@
-This directory is an introduction to testing in python.
+This directory looks at the concept of test driven development in python paying special attention to docstrings
+Unittesting was also discussed

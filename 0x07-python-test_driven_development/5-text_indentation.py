@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+"""Prints a text but with new lines after each '.', '?' and ':' character"""
+
+
 def text_indentation(text):
     """prints na text with two new lines after each ., ? and : character
     Args:

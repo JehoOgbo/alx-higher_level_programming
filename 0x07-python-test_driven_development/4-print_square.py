@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+"""print a square using hash '#' characters"""
+
+
 def print_square(size):
     """Prints a square with a given size
     Args:

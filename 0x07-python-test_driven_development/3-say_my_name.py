@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+"""Prints the name of a person"""
+
+
 def say_my_name(first_name, last_name=""):
     """
     prints a string with the name of the person
