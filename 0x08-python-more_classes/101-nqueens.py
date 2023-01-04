@@ -38,7 +38,7 @@ def get_solution(board):
             if board[r][c] == "Q":
                 solution.append([r, c])
                 break
-            return (solution)
+    return (solution)
 
 
 def xout(board, row, col):
