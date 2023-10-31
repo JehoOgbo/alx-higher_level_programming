@@ -2,10 +2,10 @@
 
 
 def print_comb():
-	for num in range(0, 99):
-		print('{}'.format(num), end=', ')
-	print('{}'.format(99))
+    for num in range(0, 99):
+        print('{:02}'.format(num), end=', ')
+    print('{}'.format(99))
 
 
 if __name__ == '__main__':
-	print_comb()
+    print_comb()
