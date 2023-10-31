@@ -8,7 +8,7 @@ def tebalpha():
             print('{}'.format(chr(i)), end='')
         else:
             print('{}'.format(chr(i - 32)), end='')
-        i--
+        i = i - 1
 
 
 if __name__ == '__main__':
