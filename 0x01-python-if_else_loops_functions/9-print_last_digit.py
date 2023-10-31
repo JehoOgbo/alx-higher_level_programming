@@ -3,5 +3,5 @@
 
 def print_last_digit(number):
     store = number % 10
-    print('{}'.format(store))
+    print('{}'.format(store), end='')
     return (store)

@@ -11,7 +11,7 @@ def fizzbuzz():
             print('Buzz', end=' ')
         else:
             print('{}'.format(i), end=' ')
-    print('FizzBuzz')
+    print('Buzz ')
 
 
 if __name__ == '__main__':
