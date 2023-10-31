@@ -3,7 +3,7 @@
 
 def tebalpha():
     i = 122
-    for i > 96:
+    while i > 96:
         if i % 2 == 0:
             print('{}'.format(chr(i)), end='')
         else:
