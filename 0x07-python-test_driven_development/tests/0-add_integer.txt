@@ -1,0 +1,50 @@
+# 0-add_integer.txt
+
+This file serves as a doctest file for ``add_integers()``.
+
+Numbers only
+===========
+
+``add_integers()`` returns the sum of its arguments. It takes only numbers and perfors additions using the ``+`` operator. It can take negative values.
+
+::
+
+	>>> add_integer = __import__('0-add_integer').add_integer
+	>>> add_integer(2, 3)
+	5
+	>>> add_integer(2, -4)
+	-2
+	>>> add_integer(-1, -5)
+	-6
+
+It can take both integers and floats as arguments but converts all to int to evaluate the results.
+
+::
+
+	>>> add_integer(2.0, 3)
+	5
+	>>> add_integer(50.0, 5.0)
+	55
+
+If a data type other than an integer or a float is entered, it raises a TypeError with a message depending on which variable has received a wrong input.
+The first argument takes precedence meaning if both values were of the wrong type, an Exception will be raised for the first argument only.
+
+::
+
+	# case for a is a string
+	>>> add_integer("i am a boy", 7)
+	Traceback (most recent call last):
+	...
+
+	# case for b is None
+	TypeError: a must be an integer
+	>>> add_integer(7, None)
+	Traceback (most recent call last):
+	...
+	TypeError: b must be an integer
+
+	# case for both a and b are wrong data type
+	>>> add_integer([8, 9], "this")
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer

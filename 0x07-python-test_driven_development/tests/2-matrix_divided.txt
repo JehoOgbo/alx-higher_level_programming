@@ -1,0 +1,96 @@
+# 2-matrix_divided.txt
+
+This file serves as a doctest file for ``matrix_divided()``.
+
+Numbers only
+===========
+
+``matrix_divided(matrix, div)`` returns a new matrix containing all elements of original matrix divided by a given number div. It takes only numbers and performs divisions using the ``/`` operator. It can take negative values.
+It doesn't change the original list
+
+::
+
+	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+	>>> a = [[2, 4], [8, 10]]
+	>>> matrix_divided(a, 2)
+	[[1.0, 2.0], [4.0, 5.0]]
+	>>> print(a)
+	[[2, 4], [8, 10]]
+
+It can take both a matrix of integers and floats as first arg and a float or int as the second
+All elements of the new list must be rounded off to two decimal places
+::
+
+	>>> b = [[2.2, 2.4], [6.4, 8.4]]
+	>>> matrix_divided(b, 2)
+	[[1.1, 1.2], [3.2, 4.2]]
+	>>> matrix_divided(b, 0.5)
+	[[4.4, 4.8], [12.8, 16.8]]
+	>>> matrix_divided(b, 3)
+	[[0.73, 0.8], [2.13, 2.8]]
+
+# All errors concerning div take precedence
+If div is a data type other than an int or float, return a typeError with the message ``div must be a number``
+
+::
+
+	>>> matrix_divided(a, "a")
+	Traceback (most recent call last):
+	...
+	TypeError: div must be a number
+	>>> matrix_divided(a, [2, 3])
+	Traceback (most recent call last):
+	...
+	TypeError: div must be a number
+
+If div is Zero, return a ZeroDivisionError with the message ``division by Zero``
+
+::
+
+	>>> matrix_divided(a, 0)
+	Traceback (most recent call last):
+	...
+	ZeroDivisionError: division by Zero
+
+If all rows of the matrix are not the same size, it raises a type Error
+
+::
+
+	>>> c = [[2, 4], [2, 5, 6], [3, 9]]
+	>>> matrix_divided(c, 9)
+	Traceback (most recent call last):
+	...
+	TypeError: Each row of the matrix must have the same size
+
+If an element of an element of the matrix is not an int or float, raise a typeError
+
+::
+
+	>>> c = [[2, 4], [3, "sing"], [4, 5]]
+	>>> matrix_divided(c, 7)
+	Traceback (most recent call last):
+	...
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+If a data type other than an integer or a float is entered, it raises a TypeError with a message depending on which variable has received a wrong input.
+The first argument takes precedence meaning if both values were of the wrong type, an Exception will be raised for the first argument only.
+
+::
+
+	# case for a is a string
+	#>>> add_integer("i am a boy", 7)
+	#Traceback (most recent call last):
+	#...
+
+	# case for b is None
+	#TypeError: a must be an integer
+	#>>> add_integer(7, None)
+	#Traceback (most recent call last):
+	#...
+	#TypeError: b must be an integer
+
+	# case for both a and b are wrong data type
+	#>>> add_integer([8, 9], "this")
+	#Traceback (most recent call last):
+	#...
+	#TypeError: a must be an integer

@@ -1,0 +1,30 @@
+# 3-say_my_name.txt
+
+Doctest for function ``say_my_name()``.
+
+``say_my_name(first_name, last_name="")`` returns a string saying "My name is 'firstname' 'lastname'
+
+This function takes two string arguments.
+If the arguments given are of a different type, raise a TypeError.
+============
+
+::
+
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+	>>> a = "Ferius"
+	>>> b = "Kellen"
+	>>> say_my_name(a, b)
+	My name is Ferius Kellen
+	>>> say_my_name(a, 45)
+	Traceback (most recent call last):
+	...
+	TypeError: last_name must be a string
+	>>> say_my_name(["less", "feel"], b)
+	Traceback (most recent call last):
+	...
+	TypeError: first_name must be a string
+
+The function still works if the last argument is not supplied
+::
+	>>> say_my_name(a)
+	My name is Ferius 
