@@ -1,0 +1,29 @@
+This file is a doctest file for the class ``MyList()`` which inherits from the `list` class and defines a method ``print_sorted()`` which prints a sorted version of a list without changing the order of the original
+All inputs to this file are expected to be of type integers
+============
+``My_list()`` has all the capabilities of a list with the added benefit of the additional print_sorted() method
+
+::
+
+		>>> MyList = __import__("1-my_list").MyList
+		>>> mylist = MyList()
+		>>> mylist.append(1)
+		>>> mylist.append(4)
+		>>> mylist.append(2)
+		>>> mylist.append(3)
+		>>> mylist.append(5)
+		>>> print(mylist)
+		[1, 4, 2, 3, 5]
+		>>> mylist.pop()
+		5
+		>>> print(mylist)
+		[1, 4, 2, 3]
+
+The ``print_sorted()`` method creates a sorted version of the list
+
+::
+
+		>>> mylist.print_sorted()
+		[1, 2, 3, 4]
+		>>> print(mylist)
+		[1, 4, 2, 3]
