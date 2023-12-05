@@ -4,6 +4,8 @@
 
 
 class BaseGeometry():
+    """A class capable of raising an exception"""
+
     def __init__(self):
         """initializes the object"""
         pass

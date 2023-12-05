@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""checks inheritance properties between an object and a class"""
+
 
 def inherits_from(obj, a_class):
     """ inherits_from: checks if an object is an
