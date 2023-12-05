@@ -1,4 +1,6 @@
 #!/usr/bin/pyhon3
+"""Returns true or false if an object is an exact instance of a class"""
+
 
 def is_same_class(obj, a_class):
     """ is_same_class: This function checks if an object
