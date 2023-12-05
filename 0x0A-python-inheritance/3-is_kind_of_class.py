@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""A class tha checks an object is related to another"""
+
 
 def is_kind_of_class(obj, a_class):
     """ is_kind_of_class: checks if an object is an instance
