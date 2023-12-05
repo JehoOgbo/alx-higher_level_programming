@@ -1,4 +1,4 @@
-#!/usr/bin/pyhon3
+#!/usr/bin/python3
 """Returns true or false if an object is an exact instance of a class"""
 
 
