@@ -6,6 +6,7 @@
 
 
 class MyList(list):
+    """Implement sorted printing for the builtin list class"""
     def __init__(self):
         list.__init__(self)
 
