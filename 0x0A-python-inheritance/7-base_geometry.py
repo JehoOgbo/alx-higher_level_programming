@@ -4,6 +4,8 @@
 
 
 class BaseGeometry():
+    """A class withe some public instance methods"""
+
     def __init__(self):
         """initializes the object"""
         pass
