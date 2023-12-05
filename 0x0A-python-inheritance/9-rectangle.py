@@ -4,6 +4,8 @@
 
 
 class BaseGeometry():
+    """A class with some public instance methods"""
+
     def __init__(self):
         """initializes the object"""
         pass
@@ -31,6 +33,8 @@ class BaseGeometry():
 
 
 class Rectangle(BaseGeometry):
+    """A class with some methods"""
+
     def __init__(self, width, height):
         """initializes the object"""
         BaseGeometry.__init__(self)
@@ -38,13 +42,6 @@ class Rectangle(BaseGeometry):
         self.integer_validator("height", height)
         self.__width = width
         self.__height = height
-
-    def area(self):
-        """ area: Finds the area of a rectangle
-            takes no arguments as it uses
-            private instance attributes
-        """
-        return (self.__width * self.__height)
 
     def __str__(self):
         """__str__: defines what is printed when
