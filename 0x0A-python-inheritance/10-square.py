@@ -56,6 +56,8 @@ class Rectangle(BaseGeometry):
 
 
 class Square(Rectangle):
+    """ Defines a square"""
+
     def __init__(self, size):
         """initializes the square with the length of its sides"""
         Rectangle.__init__(self, size, size)
