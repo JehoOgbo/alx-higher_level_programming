@@ -14,9 +14,9 @@ def pascal_triangle(n):
 
     angle = [[1]]
     while len(angle) != n:
-        tri = angle[-1] # first case tri = [1, 1]
+        tri = angle[-1]
         temp = [1]
-        for i in range(len(tri) - 1): # first case i in range 0 doesnt run
+        for i in range(len(tri) - 1):
             temp.append(tri[i] + tri[i + 1])
         temp.append(1)
         angle.append(temp)
