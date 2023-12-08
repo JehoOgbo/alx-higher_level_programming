@@ -27,6 +27,7 @@ def add_item(argv):
     # items.extend(sys.argv[1:]) also possible
     return new_list
 
+
 if __name__ == '__main__':
     my_list = add_item(sys.argv)
     save_to(my_list, "add_item.json")
