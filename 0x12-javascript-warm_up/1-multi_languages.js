@@ -4,5 +4,5 @@ let c = 'C is fun';
 console.log(c);
 c = 'Python is cool';
 console.log(c);
-c = 'Javascript is amazing';
+c = 'JavaScript is amazing';
 console.log(c);
