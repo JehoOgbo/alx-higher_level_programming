@@ -1,11 +1,7 @@
 #!/usr/bin/node
 /* defines a square that inherits from class rectangle */
-const Rectangle = require('./4-rectangle');
-class Square extends Rectangle {
-  constructor (size) {
-    super(size, size);
-  }
-
+const SquareP = require('./5-square');
+class Square extends SquareP {
   charPrint (c) {
     let i = 1;
     let newer = c;
