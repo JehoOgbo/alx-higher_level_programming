@@ -6,14 +6,15 @@ class Rectangle {
       this.height = h;
     }
   }
-  print() {
+
+  print () {
     let i = 1;
-	let exes = 'X';
-	while (i < this.width) {
+    let exes = 'X';
+    while (i < this.width) {
       exes = exes + 'X';
-	  i++;
+      i++;
     }
-	i = 0;
+    i = 0;
     while (i < this.height) {
       console.log(exes);
       i++;
