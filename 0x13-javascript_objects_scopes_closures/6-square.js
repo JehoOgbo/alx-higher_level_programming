@@ -5,10 +5,11 @@ class Square extends Rectangle {
   constructor (size) {
     super(size, size);
   }
+
   charPrint (c) {
     let i = 1;
     let newer = c;
-	if (typeof newer === "undefined") {
+    if (typeof newer === 'undefined') {
       newer = 'X';
       c = 'X';
     }
@@ -16,9 +17,9 @@ class Square extends Rectangle {
       newer = newer + c;
       i++;
     }
-	i = 0;
+    i = 0;
     while (i < this.height) {
-      console.log(newer); 
+      console.log(newer);
       i++;
     }
   }

@@ -20,14 +20,16 @@ class Rectangle {
       i++;
     }
   }
+
   rotate () {
-    let i = this.width;
+    const i = this.width;
     this.width = this.height;
     this.height = i;
   }
+
   double () {
     this.width = 2 * (this.width);
-	this.height = 2 * (this.height);
+    this.height = 2 * (this.height);
   }
 }
 
