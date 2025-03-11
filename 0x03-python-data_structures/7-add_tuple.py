@@ -14,8 +14,8 @@ def add_tuple(tuple_a=(), tuple_b=()):
         a = tuple_a[0]
         b = tuple_a[1]
     elif length == 1:
-            a = tuple_a[0]
-            b = 0
+        a = tuple_a[0]
+        b = 0
     else:
         a = 0
         b = 0
