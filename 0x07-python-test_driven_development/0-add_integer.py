@@ -4,6 +4,11 @@
 
 
 def add_integer(a, b=98):
+    """ adds two given values
+        Args:
+            a - numeric data which must be provided
+            b - numeric data which defaults to 98
+    """
     if type(a) not in [int, float]:
         raise TypeError("a must be an integer")
     if type(b) not in [int, float]:
