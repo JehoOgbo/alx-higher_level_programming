@@ -112,3 +112,14 @@ The first argument takes precedence meaning if both values were of the wrong typ
 	Traceback (most recent call last):
 	...
 	ValueError: cannot convert float NaN to integer
+
+	# case for float overflow
+	>>> add_integer(1e1000)
+	Traceback (most recent call last):
+	...
+	OverflowError: cannot convert float infinity to integer
+
+	>>> add_integer(89, 1e1000)
+	Traceback (most recent call last):
+	...
+	OverflowError: cannot convert float infinity to integer
