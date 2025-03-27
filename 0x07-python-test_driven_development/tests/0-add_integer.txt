@@ -102,8 +102,14 @@ The first argument takes precedence meaning if both values were of the wrong typ
 	TypeError: b must be an integer
 
 	# case for a is not defined
-	>>> add_integer(NaN)
+	>>> add_integer(float('nan'))
 	Traceback (most recent call last):
 	...
-	NameError: name 'NaN' is not defined
+	TypeError: a must be an integer
+
+	# case for b is not too big
+	>>> add_integer(float('nan'))
+	Traceback (most recent call last):
+	...
+	TypeError: b must be an integer
 	
