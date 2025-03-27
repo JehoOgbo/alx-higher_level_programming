@@ -75,9 +75,7 @@ The first argument takes precedence meaning if both values were of the wrong typ
 
 	# case for only a provided
 	>>> add_integer(a=4)
-	Traceback (most recent call last):
-	...
-	TypeError: b must be an integer
+	102
 
 	# case for a is None
 	>>> add_integer(None)
@@ -107,5 +105,5 @@ The first argument takes precedence meaning if both values were of the wrong typ
 	>>> add_integer(NaN)
 	Traceback (most recent call last):
 	...
-	NameError: name Name NaN not defined
+	NameError: name 'NaN' is not defined
 	
