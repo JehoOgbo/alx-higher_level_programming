@@ -32,6 +32,8 @@ The ``print_sorted()`` method creates a sorted version of the list
 		[-89, 1, 2, 3, 4]
 		>>> mynewlist = MyList()
 		>>> mynewlist.print_sorted()
+		[]
 		>>> mynewlist
+		[]
 
 
