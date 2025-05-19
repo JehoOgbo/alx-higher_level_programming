@@ -60,7 +60,6 @@ class Square(Rectangle):
 
     def __init__(self, size):
         """initializes the square with the length of its sides"""
-        Rectangle.__init__(self, size, size)
         self.integer_validator("size", size)
         self.__size = size
 
