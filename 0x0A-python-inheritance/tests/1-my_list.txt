@@ -27,3 +27,10 @@ The ``print_sorted()`` method creates a sorted version of the list
 		[1, 2, 3, 4]
 		>>> print(mylist)
 		[1, 4, 2, 3]
+		>>> mylist.append(-89)
+		>>> mylist.print_sorted()
+		[-89, 1, 2, 3, 4]
+		>>> mynewlist = MyList()
+		>>> mynewlist.print_sorted()
+		>>> mynewlist
+		[]
