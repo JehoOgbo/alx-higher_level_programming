@@ -1,33 +1,12 @@
 #!/usr/bin/python3
-
-""" Mylist: subclass which inherits. Parentclass: list
-    @list: superclass
-"""
+""" MyList inherits from list and adds functionality """
 
 
 class MyList(list):
-    """Implement sorted printing for the builtin list class"""
-    def __init__(self):
-        list.__init__(self)
+    """ class declaration to add sorting to list class """
 
     def print_sorted(self):
-        """ print_sorted: function that sorts the contents
-            of a list in ascending order then prints the list
-            Assumes every element of the list will be an integer
-        """
-        new = []
-        for item in self:
-            new.append(item)
-        num = len(self)
-        i = 0
-        while i < num:
-            j = i + 1
-            while j < num:
-                if new[i] > new[j]:
-                    hold = new[i]
-                    new[i] = new[j]
-                    new[j] = hold
-                j += 1
-            i += 1
-
+        """ prints a list but sorted (ascending order) all elements int """
+        new = self.copy()
+        new.sort()
         print(new)
