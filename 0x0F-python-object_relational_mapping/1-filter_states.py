@@ -9,7 +9,7 @@ if __name__ == "__main__":
                            db=sys.argv[3], charset="utf8")
     cur = conn.cursor()
     cur.execute("SELECT id, name FROM states WHERE\
-                UPPER(name) LIKE 'N%' ORDER BY id ASC")
+                name LIKE BINARY 'N%' ORDER BY id ASC")
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)
