@@ -6,8 +6,14 @@ def find_peak(list_of_integers):
     """ finds the largest integer in the list """
     if list_of_integers is None or list_of_integers == []:
         return None
+    i = 0
     save = 0
-    for item in list_of_integers:
-        if save < item:
-            save = item
-    return save
+    try:
+        while list_of_integers[i]:
+            if save < list_of_integers[i]:
+                save = list_of_integers[i]
+            if save < list_of_integers[i + 1]:
+                save = list_of_integers[i + 1]
+            i += 2
+    except IndexError:
+        return save
