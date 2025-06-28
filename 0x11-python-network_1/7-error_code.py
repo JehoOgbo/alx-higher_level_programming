@@ -12,4 +12,5 @@ if __name__ == "__main__":
     response = get(argv[1])
     if response.status_code == 200:
         print(response.text)
-    print("Error code: {}".format(response.status_code))
+    else:
+        print("Error code: {}".format(response.status_code))
