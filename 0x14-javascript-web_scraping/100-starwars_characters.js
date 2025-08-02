@@ -7,6 +7,7 @@ url = url + movieId;
 
 request(url, function (error, response, body) {
   if (error) {
+    console.log(error);
     return;
   }
   const movieDetails = JSON.parse(body).characters;
